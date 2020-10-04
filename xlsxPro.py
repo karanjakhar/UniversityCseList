@@ -25,7 +25,7 @@ def search(name):
         i=1
         for line in csv_reader:
             if name.upper() in line['name'] or name in line['name']:
-                print('{}. UID of {}:'.format(i,line['name']),line['uid'])
+                print(f"{i}. UID of {line['name']}: {line['uid']}")
                 i+=1
 
 def get_input():
